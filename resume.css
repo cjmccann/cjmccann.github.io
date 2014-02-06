@@ -1,3 +1,7 @@
+body {
+	font-family: Georgia;
+}
+
 h1 {
 	text-align: center;
 	font-size: 28px;
@@ -21,9 +25,6 @@ h3 {
 ul {
 	margin: 0;
 }
-p {
-
-}
 
 .bold {
 	font-weight: bold;
@@ -33,6 +34,3 @@ p {
 	font-style: italic;
 }
 
-body {
-	font-family: Georgia;
-}
