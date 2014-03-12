@@ -15,7 +15,6 @@ var places;
 function init()
 {
 	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-	map.setAttribute('style', 'width:100%; height=100%');
 	getMyLocation();
 }
 
