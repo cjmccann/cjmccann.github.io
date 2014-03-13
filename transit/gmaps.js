@@ -4,6 +4,7 @@ var request = new XMLHttpRequest();
 var line = new XMLHttpRequest();
 var lineData = new XMLHttpRequest();
 var markers = []
+var poly
 var me = new google.maps.LatLng(myLat, myLng);
 var myOptions = {
 			zoom: 13, // The larger the zoom number, the bigger the zoom
@@ -52,14 +53,30 @@ function renderLine(aLine) {
 				}
 			}
 
+			var polyOptions = {
+				strokeColor: '#000000',
+				strokeOpacity: 1.0,
+				strokeWeight: 3
+			};
+
+			poly = new google.maps.Polyline(polyOptions);
+			poly.setMap(map);
+	
+
 			for (var i = 0; i < markers.length; i++) {
 				mkWindows(markers[i]);
+				mkPath(markers[i]);
 			}
 		}
 	};
 
 	lineData.open("GET", 'stations.json', true);
 	lineData.send();
+}
+
+function mkPath(aMarker) {
+	var path = poly.getPath();
+	path.push(aMarker.position)
 }
 
 function mkWindows (aMarker) {
