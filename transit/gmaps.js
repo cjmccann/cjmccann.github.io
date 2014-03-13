@@ -10,7 +10,7 @@ var goldStar = {
 	fillOpacity: 0.8,
 	scale: .2,
 	strokeColor: 'gold',
-	strokeWeight: 14
+	strokeWeight: 3
 };
 var closestStop;
 var shortestDistance;
@@ -102,7 +102,7 @@ function distance(aMe, aMarker) {
 	var lat2 = myLat;
 	var lon2 = myLng;
 	var lat1 = aMarker.position.k
-	var lon2 = aMarker.position.A
+	var lon1 = aMarker.position.A
 
 	var R  = 6371;
 
