@@ -95,7 +95,7 @@ function renderMap()
 	// Create a marker
 	marker = new google.maps.Marker({
 		position: me,
-		title: "Here I Am!"
+		title: "I am here at lat:" + myLat + "; long: " + myLng
 	});
 	marker.setMap(map);
 		
