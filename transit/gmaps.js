@@ -40,19 +40,25 @@ function renderLine(aLine) {
 			lineCoords = JSON.parse(lineData.responseText)
 			console.log(lineCoords);
 
+			var markers;
+
 			for (var i = 0; i < lineCoords.length; i++) {
+
 				if (lineCoords[i].Line.toLowerCase() == aLine) {
 					console.log(i);
-					marker = new google.maps.Marker({
+					markers.push(new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
 						title: lineCoords[i].Name
-					});
-					marker.setMap(map);
-					google.maps.event.addListener(marker, 'click', function() {
-						infowindow.setContent(marker.title);
-						infowindow.open(map, marker);
-					});
+					});)
 				}
+			}
+
+			for (var i = 0; i < markers.length; i++) {
+				markers[i].setMap(map);
+				google.maps.event.addListener(markers[i], 'click', function() {
+					infowindow.setContent(marker[i].title);
+					infowindow.open(map, marker[i]);
+				});
 			}
 		}
 	};
