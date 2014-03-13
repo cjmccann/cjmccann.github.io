@@ -32,7 +32,7 @@ function lineReady() {
 	} 
 }
 
-function renderLine(line) {
+function renderLine(aLine) {
 	console.log("renderline");
 
 	lineData.onreadystatechange = function() {
@@ -41,7 +41,8 @@ function renderLine(line) {
 			console.log(lineCoords);
 
 			for (var i = 0; i < lineCoords.lengh; i++) {
-				if (lineCoords[i].Line == line) {
+				if (lineCoords[i].Line.toLowerCase() == aLine) {
+					console.log(i);
 					marker = new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
 						title: lineCoords[i].Name
