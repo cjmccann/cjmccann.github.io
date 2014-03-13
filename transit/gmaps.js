@@ -53,19 +53,22 @@ function renderLine(aLine) {
 			}
 
 			for (var i = 0; i < markers.length; i++) {
-				markers[i].setMap(map);
-				google.maps.event.addListener(markers[i], 'click', function() {
-					infowindow.close();
-					infowindow.setContent(markers[i].title);
-					console.log(markers[i].title);
-					infowindow.open(map, markers[i]);
-				});
+				mkWindows(markers[i]);
 			}
 		}
 	};
 
 	lineData.open("GET", 'stations.json', true);
 	lineData.send();
+}
+
+function mkWindows (aMarker) {
+	aMarker.setMap(map);
+	google.maps.event.addListener(aMarker, 'click', function() {
+		infowindow.close();
+		infowindow.setContent(aMarker.title);
+		infowindow.open(map, aMarker);
+	});
 }
 
 function getMyLocation()
