@@ -91,7 +91,7 @@ function renderLine(aLine) {
 			marker = new google.maps.Marker({
 				position: me,
 				icon: goldStar,
-				title: "I am here at lat:" + myLat + "; long: " + myLng + " and the closest T-Stop is " + closestStop.title + " which is " + shortestDistance + " miles away."
+				title: "I am here at lat:" + myLat + "; long: " + myLng + "\n The closest T-Stop is " + closestStop.title + " which is " + shortestDistance + " miles away."
 			});			
 			console.log(closestStop);
 		}
