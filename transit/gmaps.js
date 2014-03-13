@@ -40,7 +40,7 @@ function renderLine(aLine) {
 			lineCoords = JSON.parse(lineData.responseText)
 			console.log(lineCoords);
 
-			var markers;
+			var markers = [];
 
 			for (var i = 0; i < lineCoords.length; i++) {
 
