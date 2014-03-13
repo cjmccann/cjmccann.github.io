@@ -55,10 +55,11 @@ function renderLine(aLine) {
 
 				if (lineCoords[i].Line.toLowerCase() == aLine) {
 					console.log(i);
-					var curMarker = markers.push(new google.maps.Marker({
+					var curMarker = new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
 						title: lineCoords[i].Line
 					}));
+					markers.push(curMarker);
 					mkPath(curMarker);
 				}
 			}
