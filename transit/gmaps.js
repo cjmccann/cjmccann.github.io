@@ -48,7 +48,7 @@ function renderLine(aLine) {
 					console.log(i);
 					markers.push(new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
-						title: lineCoords[i].Name
+						title: lineCoords[i].Line
 					}));
 				}
 			}
