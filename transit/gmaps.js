@@ -8,7 +8,7 @@ var goldStar = {
 	path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
 	fillColor: 'yellow',
 	fillOpacity: 0.8,
-	scale: 1,
+	scale: .2,
 	strokeColor: 'gold',
 	strokeWeight: 14
 };
@@ -107,7 +107,7 @@ function distance(aMe, aMarker) {
 	var R  = 6371;
 
 	var dLat = (lat2-lat1).toRad();
-	var dLon = (lon2-llon1).toRad();
+	var dLon = (lon2-lon1).toRad();
 	var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) * Math.sin(dLon/2) * Math.sin(dLon/2);
 	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 	var d = R * c;
