@@ -41,7 +41,7 @@ function renderLine(line) {
 			console.log(lineCoords);
 
 			for (var i = 0; i < lineCoords.lengh; i++) {
-				if lineCoords[i].line == line {
+				if (lineCoords[i].line == line) {
 					marker = new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
 						title: lineCoords[i].name
@@ -92,16 +92,7 @@ function renderMap()
 	google.maps.event.addListener(marker, 'click', function() {
 		infowindow.setContent(marker.title);
 		infowindow.open(map, marker);
-	});
-	
-	// Calling Google Places API
-	var request = {
-		location: me,
-		radius: '500',
-		types: ['food']
-	};
-	service = new google.maps.places.PlacesService(map);
-	service.search(request, callback);
+	});	
 }
 
 // Taken from http://code.google.com/apis/maps/documentation/javascript/places.html
