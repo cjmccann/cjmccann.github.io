@@ -40,7 +40,7 @@ function renderLine(aLine) {
 			lineCoords = JSON.parse(lineData.responseText)
 			console.log(lineCoords);
 
-			for (var i = 0; i < lineCoords.lengh; i++) {
+			for (var i = 0; i < lineCoords.length; i++) {
 				if (lineCoords[i].Line.toLowerCase() == aLine) {
 					console.log(i);
 					marker = new google.maps.Marker({
