@@ -8,7 +8,7 @@ var goldStar = {
 	path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
 	fillColor: 'yellow',
 	fillOpacity: 0.8,
-	scale: .1,
+	scale: .15,
 	strokeColor: 'gold',
 	strokeWeight: 2
 };
@@ -68,7 +68,7 @@ function renderLine(aLine) {
 					var curMarker = new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
 						icon: goldStar,
-						title: lineCoords[i].Line
+						title: lineCoords[i].Stop
 					});
 					markers.push(curMarker);
 					mkPath(curMarker);
@@ -88,6 +88,8 @@ function renderLine(aLine) {
 					}
 				}
 			}
+			marker.title  = "I am here at lat:" + myLat + "; long: " + myLng + "and the closest T-Stop is" + closestStop.title +
+					  "which is " + shortestDistance + " miles away."
 			console.log(closestStop);
 		}
 	};
