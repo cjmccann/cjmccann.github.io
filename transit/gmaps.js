@@ -2,6 +2,7 @@ var myLat = 0;
 var myLng = 0;
 var request = new XMLHttpRequest();
 var line = new XMLHttpRequest();
+var lineData = new XMLHttpRequest();
 var me = new google.maps.LatLng(myLat, myLng);
 var myOptions = {
 			zoom: 13, // The larger the zoom number, the bigger the zoom
@@ -34,7 +35,14 @@ function lineReady() {
 function renderLine(line) {
 	console.log("renderline");
 
-	lineData = JSON.parse("stations.json");
+	lineData.onreadystatechange = function() {
+		if (lineData.readyState === 4 && lineData.status === 200) {
+			lineCoords = JSON.parse(lineData.responseText)
+		}
+	};
+
+	lineData.open("GET", path, true);
+	lineData.send();
 	console.log(lineData);
 }
 
