@@ -49,7 +49,7 @@ function renderLine(aLine) {
 					markers.push(new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
 						title: lineCoords[i].Name
-					});)
+					}));
 				}
 			}
 
