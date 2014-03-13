@@ -56,6 +56,7 @@ function renderLine(aLine) {
 				markers[i].setMap(map);
 				google.maps.event.addListener(markers[i], 'click', function() {
 					console.log(markers[i].title);
+					infowindow.close();
 					infowindow.setContent(markers[i].title);
 					infowindow.open(map, markers[i]);
 				});
