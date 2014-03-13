@@ -41,7 +41,7 @@ function renderLine(line) {
 		}
 	};
 
-	lineData.open("GET", path, true);
+	lineData.open("GET", 'stations.json', true);
 	lineData.send();
 	console.log(lineData);
 }
