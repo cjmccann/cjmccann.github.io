@@ -24,8 +24,8 @@ function init()
 }
 
 function lineReady() {
-	if (line.readyState == 4 && xhr.status == 200) {
-		scheduleData = JSON.parse(xhr.responseText);
+	if (line.readyState == 4 && line.status == 200) {
+		scheduleData = JSON.parse(line.responseText);
 		console.log(scheduleData);
 		renderLine(scheduleData["line"]);
 	}
