@@ -41,10 +41,10 @@ function renderLine(line) {
 			console.log(lineCoords);
 
 			for (var i = 0; i < lineCoords.lengh; i++) {
-				if (lineCoords[i].line == line) {
+				if (lineCoords[i].Line == line) {
 					marker = new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
-						title: lineCoords[i].name
+						title: lineCoords[i].Name
 					});
 					marker.setMap(map);
 					google.maps.event.addListener(marker, 'click', function() {
