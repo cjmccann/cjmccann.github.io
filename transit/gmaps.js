@@ -42,17 +42,6 @@ function renderLine(aLine) {
 			lineCoords = JSON.parse(lineData.responseText)
 			console.log(lineCoords);
 
-			for (var i = 0; i < lineCoords.length; i++) {
-
-				if (lineCoords[i].Line.toLowerCase() == aLine) {
-					console.log(i);
-					markers.push(new google.maps.Marker({
-						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
-						title: lineCoords[i].Line
-					}));
-				}
-			}
-
 			var polyOptions = {
 				strokeColor: '#000000',
 				strokeOpacity: 1.0,
@@ -61,11 +50,22 @@ function renderLine(aLine) {
 
 			poly = new google.maps.Polyline(polyOptions);
 			poly.setMap(map);
+
+			for (var i = 0; i < lineCoords.length; i++) {
+
+				if (lineCoords[i].Line.toLowerCase() == aLine) {
+					console.log(i);
+					var curMarker = markers.push(new google.maps.Marker({
+						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
+						title: lineCoords[i].Line
+					}));
+					mkPath(curMarker);
+				}
+			}
 	
 
 			for (var i = 0; i < markers.length; i++) {
 				mkWindows(markers[i]);
-				mkPath(markers[i]);
 			}
 		}
 	};
