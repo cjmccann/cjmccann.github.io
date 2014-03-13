@@ -38,12 +38,12 @@ function renderLine(line) {
 	lineData.onreadystatechange = function() {
 		if (lineData.readyState === 4 && lineData.status === 200) {
 			lineCoords = JSON.parse(lineData.responseText)
+			console.log(lineCoords);
 		}
 	};
 
 	lineData.open("GET", 'stations.json', true);
 	lineData.send();
-	console.log(lineData);
 }
 
 function getMyLocation()
