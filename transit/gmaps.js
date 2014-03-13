@@ -1,6 +1,7 @@
 var myLat = 0;
 var myLng = 0;
 var request = new XMLHttpRequest();
+var line = new XMLHttpRequest();
 var me = new google.maps.LatLng(myLat, myLng);
 var myOptions = {
 			zoom: 13, // The larger the zoom number, the bigger the zoom
@@ -16,6 +17,22 @@ function init()
 {
 	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 	getMyLocation();
+	line.open("get", "http://mbtamap.herokuapp.com/mapper/rodeo.json", true);
+
+	line.onreadystatechange = lineReady;
+	line.send(null);
+}
+
+function lineReady() {
+	if (line.readyState == 4 && xhr.status == 200) {
+		scheduleData = JSON.parse(xhr.responseText);
+		console.log(scheduleData);
+		renderLine(scheduleData["line"]);
+	}
+}
+
+function renderline(line) {
+	console.log("renderline");
 }
 
 function getMyLocation()
@@ -66,7 +83,6 @@ function renderMap()
 function callback(results, status)
 {
 	if (status == google.maps.places.PlacesServiceStatus.OK) {
-		alert("Got places back!");
 		places = results;
 		for (var i = 0; i < results.length; i++) {
 			createMarker(results[i]);
