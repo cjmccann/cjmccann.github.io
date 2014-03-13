@@ -31,8 +31,11 @@ function lineReady() {
 	}
 }
 
-function renderline(line) {
+function renderLine(line) {
 	console.log("renderline");
+
+	lineData = JSON.parse("stations.json");
+	console.log(lineData);
 }
 
 function getMyLocation()
