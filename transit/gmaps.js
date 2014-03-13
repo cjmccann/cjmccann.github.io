@@ -3,6 +3,7 @@ var myLng = 0;
 var request = new XMLHttpRequest();
 var line = new XMLHttpRequest();
 var lineData = new XMLHttpRequest();
+var markers = []
 var me = new google.maps.LatLng(myLat, myLng);
 var myOptions = {
 			zoom: 13, // The larger the zoom number, the bigger the zoom
@@ -39,8 +40,6 @@ function renderLine(aLine) {
 		if (lineData.readyState === 4 && lineData.status === 200) {
 			lineCoords = JSON.parse(lineData.responseText)
 			console.log(lineCoords);
-
-			var markers = [];
 
 			for (var i = 0; i < lineCoords.length; i++) {
 
