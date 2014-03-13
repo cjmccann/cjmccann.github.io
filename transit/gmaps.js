@@ -58,7 +58,7 @@ function renderLine(aLine) {
 					var curMarker = new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
 						title: lineCoords[i].Line
-					}));
+					});
 					markers.push(curMarker);
 					mkPath(curMarker);
 				}
