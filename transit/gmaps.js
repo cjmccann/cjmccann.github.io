@@ -3,8 +3,18 @@ var myLng = 0;
 var request = new XMLHttpRequest();
 var line = new XMLHttpRequest();
 var lineData = new XMLHttpRequest();
-var markers = []
-var poly
+var markers = [];
+var goldStar = {
+	path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+	fillColor: 'yellow',
+	fillOpacity: 0.8,
+	scale: 1,
+	strokeColor: 'gold',
+	strokeWeight: 14
+};
+var closestStop;
+var shortestDistance;
+var poly;
 var me = new google.maps.LatLng(myLat, myLng);
 var myOptions = {
 			zoom: 13, // The larger the zoom number, the bigger the zoom
@@ -57,6 +67,7 @@ function renderLine(aLine) {
 					console.log(i);
 					var curMarker = new google.maps.Marker({
 						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
+						icon: goldStar,
 						title: lineCoords[i].Line
 					});
 					markers.push(curMarker);
@@ -64,15 +75,43 @@ function renderLine(aLine) {
 				}
 			}
 	
-
 			for (var i = 0; i < markers.length; i++) {
 				mkWindows(markers[i]);
+				if (i == 0) {
+					shortestDistance = distance(me, markers[0]);
+					closestStop = markers[0];
+				} else {
+					newDistance = distance(me, markers[i]);
+					if (shortestDistance > newDistance) {
+						shortestDistance = newDistance;
+						closestStop = markers[i];
+					}
+				}
 			}
+			console.log(closestStop);
 		}
 	};
 
 	lineData.open("GET", 'stations.json', true);
 	lineData.send();
+}
+
+Number.prototype.toRad = function() { return this * Math.PI / 180; }
+
+function distance(aMe, aMarker) {
+	var lat2 = myLat;
+	var lon2 = myLng;
+	var lat1 = aMarker.position.k
+	var lon2 = aMarker.position.A
+
+	var R  = 6371;
+
+	var dLat = (lat2-lat1).toRad();
+	var dLon = (lon2-llon1).toRad();
+	var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) * Math.sin(dLon/2) * Math.sin(dLon/2);
+	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+	var d = R * c;
+	return d;
 }
 
 function mkPath(aMarker) {
@@ -113,6 +152,7 @@ function renderMap()
 	// Create a marker
 	marker = new google.maps.Marker({
 		position: me,
+		icon: goldStar,
 		title: "I am here at lat:" + myLat + "; long: " + myLng
 	});
 	marker.setMap(map);
