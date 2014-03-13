@@ -29,7 +29,7 @@ function lineReady() {
 		scheduleData = JSON.parse(line.responseText);
 		console.log(scheduleData);
 		renderLine(scheduleData["line"]);
-	}
+	} 
 }
 
 function renderLine(line) {
@@ -39,6 +39,20 @@ function renderLine(line) {
 		if (lineData.readyState === 4 && lineData.status === 200) {
 			lineCoords = JSON.parse(lineData.responseText)
 			console.log(lineCoords);
+
+			for (var i = 0; i < lineCoords.lengh; i++) {
+				if lineCoords[i].line == line {
+					marker = new google.maps.Marker({
+						position: new google.maps.LatLng(lineCoords[i].x, lineCoords[i].y),
+						title: lineCoords[i].name
+					});
+					marker.setMap(map);
+					google.maps.event.addListener(marker, 'click', function() {
+						infowindow.setContent(marker.title);
+						infowindow.open(map, marker);
+					});
+				}
+			}
 		}
 	};
 

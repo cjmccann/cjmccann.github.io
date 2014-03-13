@@ -1,314 +1,320 @@
 [
   {
-    "Blue":"Blue",
-    "Airport":"Aquarium",
-    "42.374262":42.359784,
-    "-71.030395":-71.051652
+    "Line":"Blue",
+    "Stop":"Airport",
+    "x":42.374262,
+    "y":-71.030395
   },
   {
-    "Blue":"Blue",
-    "Airport":"Beachmont",
-    "42.374262":42.39754234,
-    "-71.030395":-70.99231944
+    "Line":"Blue",
+    "Stop":"Aquarium",
+    "x":42.359784,
+    "y":-71.051652
   },
   {
-    "Blue":"Blue",
-    "Airport":"Bowdoin",
-    "42.374262":42.361365,
-    "-71.030395":-71.062037
+    "Line":"Blue",
+    "Stop":"Beachmont",
+    "x":42.39754234,
+    "y":-70.99231944
   },
   {
-    "Blue":"Blue",
-    "Airport":"Government Center",
-    "42.374262":42.359705,
-    "-71.030395":-71.05921499999999
+    "Line":"Blue",
+    "Stop":"Bowdoin",
+    "x":42.361365,
+    "y":-71.062037
   },
   {
-    "Blue":"Blue",
-    "Airport":"Maverick",
-    "42.374262":42.36911856,
-    "-71.030395":-71.03952958000001
+    "Line":"Blue",
+    "Stop":"Government Center",
+    "x":42.359705,
+    "y":-71.05921499999999
   },
   {
-    "Blue":"Blue",
-    "Airport":"Orient Heights",
-    "42.374262":42.386867,
-    "-71.030395":-71.00473599999999
+    "Line":"Blue",
+    "Stop":"Maverick",
+    "x":42.36911856,
+    "y":-71.03952958000001
   },
   {
-    "Blue":"Blue",
-    "Airport":"Revere Beach",
-    "42.374262":42.40784254,
-    "-71.030395":-70.99253321
+    "Line":"Blue",
+    "Stop":"Orient Heights",
+    "x":42.386867,
+    "y":-71.00473599999999
   },
   {
-    "Blue":"Blue",
-    "Airport":"State Street",
-    "42.374262":42.358978,
-    "-71.030395":-71.057598
+    "Line":"Blue",
+    "Stop":"Revere Beach",
+    "x":42.40784254,
+    "y":-70.99253321
   },
   {
-    "Blue":"Blue",
-    "Airport":"Suffolk Downs",
-    "42.374262":42.39050067,
-    "-71.030395":-70.99712259
+    "Line":"Blue",
+    "Stop":"State Street",
+    "x":42.358978,
+    "y":-71.057598
   },
   {
-    "Blue":"Blue",
-    "Airport":"Wonderland",
-    "42.374262":42.41342,
-    "-71.030395":-70.991648
+    "Line":"Blue",
+    "Stop":"Suffolk Downs",
+    "x":42.39050067,
+    "y":-70.99712259
   },
   {
-    "Blue":"Blue",
-    "Airport":"Wood Island",
-    "42.374262":42.3796403,
-    "-71.030395":-71.02286539000001
+    "Line":"Blue",
+    "Stop":"Wonderland",
+    "x":42.41342,
+    "y":-70.991648
   },
   {
-    "Blue":"Orange",
-    "Airport":"Back Bay",
-    "42.374262":42.34735,
-    "-71.030395":-71.075727
+    "Line":"Blue",
+    "Stop":"Wood Island",
+    "x":42.3796403,
+    "y":-71.02286539000001
   },
   {
-    "Blue":"Orange",
-    "Airport":"Chinatown",
-    "42.374262":42.352547,
-    "-71.030395":-71.062752
+    "Line":"Orange",
+    "Stop":"Back Bay",
+    "x":42.34735,
+    "y":-71.075727
   },
   {
-    "Blue":"Orange",
-    "Airport":"Community College",
-    "42.374262":42.373622,
-    "-71.030395":-71.06953300000001
+    "Line":"Orange",
+    "Stop":"Chinatown",
+    "x":42.352547,
+    "y":-71.062752
   },
   {
-    "Blue":"Orange",
-    "Airport":"Downtown Crossing",
-    "42.374262":42.355518,
-    "-71.030395":-71.060225
+    "Line":"Orange",
+    "Stop":"Community College",
+    "x":42.373622,
+    "y":-71.06953300000001
   },
   {
-    "Blue":"Orange",
-    "Airport":"Forest Hills",
-    "42.374262":42.300523,
-    "-71.030395":-71.113686
+    "Line":"Orange",
+    "Stop":"Downtown Crossing",
+    "x":42.355518,
+    "y":-71.060225
   },
   {
-    "Blue":"Orange",
-    "Airport":"Green Street",
-    "42.374262":42.310525,
-    "-71.030395":-71.10741400000001
+    "Line":"Orange",
+    "Stop":"Forest Hills",
+    "x":42.300523,
+    "y":-71.113686
   },
   {
-    "Blue":"Orange",
-    "Airport":"Haymarket",
-    "42.374262":42.363021,
-    "-71.030395":-71.05829
+    "Line":"Orange",
+    "Stop":"Green Street",
+    "x":42.310525,
+    "y":-71.10741400000001
   },
   {
-    "Blue":"Orange",
-    "Airport":"Jackson Square",
-    "42.374262":42.323132,
-    "-71.030395":-71.099592
+    "Line":"Orange",
+    "Stop":"Haymarket",
+    "x":42.363021,
+    "y":-71.05829
   },
   {
-    "Blue":"Orange",
-    "Airport":"Malden Center",
-    "42.374262":42.426632,
-    "-71.030395":-71.07411
+    "Line":"Orange",
+    "Stop":"Jackson Square",
+    "x":42.323132,
+    "y":-71.099592
   },
   {
-    "Blue":"Orange",
-    "Airport":"Mass Ave",
-    "42.374262":42.341512,
-    "-71.030395":-71.083423
+    "Line":"Orange",
+    "Stop":"Malden Center",
+    "x":42.426632,
+    "y":-71.07411
   },
   {
-    "Blue":"Orange",
-    "Airport":"North Station",
-    "42.374262":42.365577,
-    "-71.030395":-71.06129
+    "Line":"Orange",
+    "Stop":"Mass Ave",
+    "x":42.341512,
+    "y":-71.083423
   },
   {
-    "Blue":"Orange",
-    "Airport":"Oak Grove",
-    "42.374262":42.43668,
-    "-71.030395":-71.07109699999999
+    "Line":"Orange",
+    "Stop":"North Station",
+    "x":42.365577,
+    "y":-71.06129
   },
   {
-    "Blue":"Orange",
-    "Airport":"Roxbury Crossing",
-    "42.374262":42.331397,
-    "-71.030395":-71.095451
+    "Line":"Orange",
+    "Stop":"Oak Grove",
+    "x":42.43668,
+    "y":-71.07109699999999
   },
   {
-    "Blue":"Orange",
-    "Airport":"Ruggles",
-    "42.374262":42.336377,
-    "-71.030395":-71.088961
+    "Line":"Orange",
+    "Stop":"Roxbury Crossing",
+    "x":42.331397,
+    "y":-71.095451
   },
   {
-    "Blue":"Orange",
-    "Airport":"State Street",
-    "42.374262":42.358978,
-    "-71.030395":-71.057598
+    "Line":"Orange",
+    "Stop":"Ruggles",
+    "x":42.336377,
+    "y":-71.088961
   },
   {
-    "Blue":"Orange",
-    "Airport":"Stony Brook",
-    "42.374262":42.317062,
-    "-71.030395":-71.104248
+    "Line":"Orange",
+    "Stop":"State Street",
+    "x":42.358978,
+    "y":-71.057598
   },
   {
-    "Blue":"Orange",
-    "Airport":"Sullivan",
-    "42.374262":42.383975,
-    "-71.030395":-71.076994
+    "Line":"Orange",
+    "Stop":"Stony Brook",
+    "x":42.317062,
+    "y":-71.104248
   },
   {
-    "Blue":"Orange",
-    "Airport":"Tufts Medical",
-    "42.374262":42.349662,
-    "-71.030395":-71.063917
+    "Line":"Orange",
+    "Stop":"Sullivan",
+    "x":42.383975,
+    "y":-71.076994
   },
   {
-    "Blue":"Orange",
-    "Airport":"Wellington",
-    "42.374262":42.40237,
-    "-71.030395":-71.077082
+    "Line":"Orange",
+    "Stop":"Tufts Medical",
+    "x":42.349662,
+    "y":-71.063917
   },
   {
-    "Blue":"Red",
-    "Airport":"Alewife",
-    "42.374262":42.395428,
-    "-71.030395":-71.142483
+    "Line":"Orange",
+    "Stop":"Wellington",
+    "x":42.40237,
+    "y":-71.077082
   },
   {
-    "Blue":"Red",
-    "Airport":"Andrew",
-    "42.374262":42.330154,
-    "-71.030395":-71.057655
+    "Line":"Red",
+    "Stop":"Alewife",
+    "x":42.395428,
+    "y":-71.142483
   },
   {
-    "Blue":"Red",
-    "Airport":"Ashmont",
-    "42.374262":42.284652,
-    "-71.030395":-71.06448899999999
+    "Line":"Red",
+    "Stop":"Andrew",
+    "x":42.330154,
+    "y":-71.057655
   },
   {
-    "Blue":"Red",
-    "Airport":"Braintree",
-    "42.374262":42.2078543,
-    "-71.030395":-71.0011385
+    "Line":"Red",
+    "Stop":"Ashmont",
+    "x":42.284652,
+    "y":-71.06448899999999
   },
   {
-    "Blue":"Red",
-    "Airport":"Broadway",
-    "42.374262":42.342622,
-    "-71.030395":-71.056967
+    "Line":"Red",
+    "Stop":"Braintree",
+    "x":42.2078543,
+    "y":-71.0011385
   },
   {
-    "Blue":"Red",
-    "Airport":"Central Square",
-    "42.374262":42.365486,
-    "-71.030395":-71.103802
+    "Line":"Red",
+    "Stop":"Broadway",
+    "x":42.342622,
+    "y":-71.056967
   },
   {
-    "Blue":"Red",
-    "Airport":"Charles/MGH",
-    "42.374262":42.361166,
-    "-71.030395":-71.070628
+    "Line":"Red",
+    "Stop":"Central Square",
+    "x":42.365486,
+    "y":-71.103802
   },
   {
-    "Blue":"Red",
-    "Airport":"Davis",
-    "42.374262":42.39674,
-    "-71.030395":-71.121815
+    "Line":"Red",
+    "Stop":"Charles/MGH",
+    "x":42.361166,
+    "y":-71.070628
   },
   {
-    "Blue":"Red",
-    "Airport":"Downtown Crossing",
-    "42.374262":42.355518,
-    "-71.030395":-71.060225
+    "Line":"Red",
+    "Stop":"Davis",
+    "x":42.39674,
+    "y":-71.121815
   },
   {
-    "Blue":"Red",
-    "Airport":"Fields Corner",
-    "42.374262":42.300093,
-    "-71.030395":-71.061667
+    "Line":"Red",
+    "Stop":"Downtown Crossing",
+    "x":42.355518,
+    "y":-71.060225
   },
   {
-    "Blue":"Red",
-    "Airport":"Harvard Square",
-    "42.374262":42.373362,
-    "-71.030395":-71.118956
+    "Line":"Red",
+    "Stop":"Fields Corner",
+    "x":42.300093,
+    "y":-71.061667
   },
   {
-    "Blue":"Red",
-    "Airport":"JFK/UMass",
-    "42.374262":42.320685,
-    "-71.030395":-71.052391
+    "Line":"Red",
+    "Stop":"Harvard Square",
+    "x":42.373362,
+    "y":-71.118956
   },
   {
-    "Blue":"Red",
-    "Airport":"Kendall/MIT",
-    "42.374262":42.36249079,
-    "-71.030395":-71.08617653
+    "Line":"Red",
+    "Stop":"JFK/UMass",
+    "x":42.320685,
+    "y":-71.052391
   },
   {
-    "Blue":"Red",
-    "Airport":"North Quincy",
-    "42.374262":42.275275,
-    "-71.030395":-71.029583
+    "Line":"Red",
+    "Stop":"Kendall/MIT",
+    "x":42.36249079,
+    "y":-71.08617653
   },
   {
-    "Blue":"Red",
-    "Airport":"Park Street",
-    "42.374262":42.35639457,
-    "-71.030395":-71.0624242
+    "Line":"Red",
+    "Stop":"North Quincy",
+    "x":42.275275,
+    "y":-71.029583
   },
   {
-    "Blue":"Red",
-    "Airport":"Porter Square",
-    "42.374262":42.3884,
-    "-71.030395":-71.11914899999999
+    "Line":"Red",
+    "Stop":"Park Street",
+    "x":42.35639457,
+    "y":-71.0624242
   },
   {
-    "Blue":"Red",
-    "Airport":"Quincy Adams",
-    "42.374262":42.233391,
-    "-71.030395":-71.007153
+    "Line":"Red",
+    "Stop":"Porter Square",
+    "x":42.3884,
+    "y":-71.11914899999999
   },
   {
-    "Blue":"Red",
-    "Airport":"Quincy Center",
-    "42.374262":42.251809,
-    "-71.030395":-71.005409
+    "Line":"Red",
+    "Stop":"Quincy Adams",
+    "x":42.233391,
+    "y":-71.007153
   },
   {
-    "Blue":"Red",
-    "Airport":"Savin Hill",
-    "42.374262":42.31129,
-    "-71.030395":-71.053331
+    "Line":"Red",
+    "Stop":"Quincy Center",
+    "x":42.251809,
+    "y":-71.005409
   },
   {
-    "Blue":"Red",
-    "Airport":"Shawmut",
-    "42.374262":42.29312583,
-    "-71.030395":-71.06573796000001
+    "Line":"Red",
+    "Stop":"Savin Hill",
+    "x":42.31129,
+    "y":-71.053331
   },
   {
-    "Blue":"Red",
-    "Airport":"South Station",
-    "42.374262":42.352271,
-    "-71.030395":-71.05524200000001
+    "Line":"Red",
+    "Stop":"Shawmut",
+    "x":42.29312583,
+    "y":-71.06573796000001
   },
   {
-    "Blue":"Red",
-    "Airport":"Wollaston",
-    "42.374262":42.2665139,
-    "-71.030395":-71.0203369
+    "Line":"Red",
+    "Stop":"South Station",
+    "x":42.352271,
+    "y":-71.05524200000001
+  },
+  {
+    "Line":"Red",
+    "Stop":"Wollaston",
+    "x":42.2665139,
+    "y":-71.0203369
   }
 ]
