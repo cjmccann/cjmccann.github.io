@@ -1,0 +1,36 @@
+#mechanics {
+background:url(Tree.png);
+background-size:100px 100px;
+background-repeat:no-repeat;
+}
+
+body {
+    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+    padding-right:70px;
+    padding-left:70px;
+    background-color:#8AE65C;
+}
+
+h1 {
+    font-size:60px;
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+
+h2 {
+    font-size:28px;
+    text-align:center;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+h3, h4, h5, h6 {
+    font-size:40px;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+p {
+    font-size:20px;
+}
