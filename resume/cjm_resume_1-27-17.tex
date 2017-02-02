@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.87]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% Hyperlinks
+\usepackage{hyperref}								% to use hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% personal data
+\firstname{Connor}
+\familyname{J. McCann}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{1555 N Columbus Ave}{Glendale, CA 91202}    % optional, remove the line if not wanted
+%\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
+\phone{(818) 321-8280}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{connor.j.mccann@gmail.com}                      % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+\homepage{github.com/cjmccann}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\vspace*{-2\baselineskip}
+\maketitle
+\vspace{-1.5\baselineskip}
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{May 2014}{Tufts University}{Medford, MA}{}{}{
+    \begin{itemize} 
+        \item Bachelor of Arts, Clinical Psychology
+        \item Minor in Computer Science
+        \item GPA 3.89/4.00, \textit{Summa Cum Laude}
+    \end{itemize} 
+}
+\cventry{June 2010}{Flintridge Preparatory School}{La Cañada, CA}{}{}{
+    \begin{itemize} 
+        \item GPA 3.98/4.00, \textit{California Scholarship Federation, AP Scholar with Honors}
+    \end{itemize} 
+}
+
+
+\section{Experience}
+%\cventry{June 2014 - Present}{Software Development Engineer, Test}{Pegasystems}{Cambridge MA}{}{}{\hspace{3 mm}$\bullet$ Research, pilot, and implement a UI Testing} %Framework using Ruby, RSpec, and WebDriver.} %\newline{} $\bullet$ Faciliate daily operations and stability of framework, coordinate new tests from teams in US, India, and Poland.}
+%\cventry{June 2014 - Present}{Software Development Engineer, Test}{Pegasystems}{Cambridge MA}{}{\hspace{3 mm}$\bullet$ Research, pilot, and implement an automated UI Testing Framework with Ruby, RSpec, and Selenium WebDriver }
+\cventry{June 2014 - Present}{Software Engineer}{Pegasystems}{Cambridge, MA}{}{
+    \begin{itemize} 
+        \item Design and execute conversion of product-wide UI to React, using Flux-like unidirectional data flow.
+        \item Expand core engine to efficiently manage JavaScript and CSS dependencies based on component use.
+%        \item Build Eclipse Plugin to enhance internal tooling via version control of foundational product records.
+        \item Enhance internal tooling by building Eclipse plugin to version control foundational product records.
+        \item Research, design, and implement cross-platform automated UI testing framework with Ruby, RSpec, Selenium WebDriver, and Appium.
+        \item Coordinate testing effort between 25 teams in the US, India, and Poland, including travel to Hyderabad and Kraków offices.
+    \end{itemize} 
+}
+\cventry{Sept 2013 - May 2014}{Research Intern}{Massachusetts General Hospital-Harvard Center}{Boston, MA}{}{
+    \begin{itemize}
+        \item Aided research operations through data entry, patient scheduling, and office management.
+    \end{itemize}        
+}
+\cventry{Sept 2012 - Aug 2013}{Circulation Desk Aid}{Edwin Ginn Library, Tufts University}{Medford, MA}{}{
+    \begin{itemize}
+        \item Assisted patrons of library with checking out books and using library equpiment.
+    \end{itemize}
+}
+\cventry{Sept 2012 - Dec 2012}{Office Assistant}{Boston School of Occupational Therapy}{Medford, MA}{}{
+    \begin{itemize}
+        \item Managed daily operations at department front desk.
+    \end{itemize}
+}
+\cventry{May 2012 - Aug 2012}{Research Volunteer}{Schizophrenia Aftercare Research, UCLA}{Los Angeles, CA}{}{
+    \begin{itemize}
+        \item Acted as peer mentor for patients participating in cognitive remediation research project.
+    \end{itemize}
+}
+\cventry{Sept 2011 - May 2012}{Corps Member}{Tufts Literacy Corps}{Somerville, MA}{}{
+    \begin{itemize}
+        \item Tutored reading and writing in 3rd grade classroom at the Arthur D. Healey School.
+    \end{itemize}
+}
+
+
+\section{Community Service}
+\cventry{Sept 2011 - Jan 2014}{Philanthropy Chair / Vice President of Brotherhood Development}{Sigma Phi Epsilon, Mass Zeta Chapter}{Tufts University}{}{
+    \begin{itemize}
+        \item Arranged chapter participation in Boston Walk to Defeat ALS, Relay for Life, and projects in local Somerville community.
+        \item Organized brotherhood bonding events like camping, dinners, weekend retreat, paintball.
+    \end{itemize}
+}
+\cventry{Oct 2011 - May 2013}{Committee Member}{Relay for Life, American Cancer Society}{Tufts University}{}{
+    \begin{itemize}
+        \item Helped recruit teams and members to raise money for the event.
+    \end{itemize}
+}
+
+\section{Languages, Tools, and Technologies}
+\cvline{Proficient}{\textbf{Ruby}, RSpec, Selenium WebDriver, Spanish}
+\cvline{Intermediate}{\textbf{JavaScript}, \textbf{Java}, React, HTML5, CSS3, Test Driven Development}
+\cvline{Basic}{\textbf{TypeScript}, \textbf{Python}, \textbf{C++}, Polymer, Node.js, MongoDB }
+\end{document}
